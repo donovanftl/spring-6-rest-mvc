@@ -1,4 +1,5 @@
 package donovanftl.springframework.spring6restmvc.entities;
 
-public class BeerStyle {
+public enum BeerStyle {
+    LAGER, PILSNER, STOUT, GOSE, PORTER, ALE, WHEAT, IPA, PALE_ALE, SAISON
 }
