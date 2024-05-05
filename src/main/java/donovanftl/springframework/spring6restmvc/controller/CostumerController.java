@@ -22,7 +22,7 @@ public class CostumerController {
         return customerService.getAllCostumers();
     }
 
-    @RequestMapping("{customerId}")
+    @RequestMapping(value = "{customerId}", method = RequestMethod.GET)
     public Customer getCostumerByID(@PathVariable("customerId") UUID id) {
         return customerService.getCostumerById(id);
     }
