@@ -44,6 +44,11 @@ public class CustomerServiceImpl implements CustomerService {
         customerMap.put(customer3.getId(), customer3);
     }
 
+    @Override
+    public void updateCustomerById(UUID customerId, Customer customer) {
+        Customer existing = customerMap.get(customerId);
+        existing.setName(customer.getName());
+    }
 
     @Override
     public Customer saveNewCostumer(Customer customer) {
@@ -70,8 +75,5 @@ public class CustomerServiceImpl implements CustomerService {
 
         return customerMap.get(id);
     }
-
-
-
 
 }
