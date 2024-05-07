@@ -45,7 +45,19 @@ class BeerControllerTest {
         beerServiceImpl = new BeerServiceImpl();
     }
 
+    @Test
+    void testDeleteBeer() throws Exception {
+        Beer beer = beerServiceImpl.listBeers().get(0);
 
+        mockMvc.perform(delete("/api/v1/beer/" + beer.getId())
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNoContent());
+
+        ArgumentCaptor<UUID> argumentCaptor = ArgumentCaptor.forClass(UUID.class);
+        verify(beerService).deleteById(argumentCaptor.capture());
+
+        assertThat(beer.getId()).isEqualTo(argumentCaptor.getValue());
+    }
 
     @Test
     void testUpdateBeer() throws Exception {
