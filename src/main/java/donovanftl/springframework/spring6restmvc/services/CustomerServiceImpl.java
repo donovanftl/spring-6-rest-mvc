@@ -55,7 +55,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void deleteById(UUID idCustomer) {
+    public void deleteCustomerById(UUID idCustomer) {
 
         customerMap.remove(idCustomer);
     }
@@ -67,7 +67,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Customer saveNewCostumer(Customer customer) {
+    public Customer saveNewCustomer(Customer customer) {
 
         Customer savedCustomer = Customer.builder()
                 .id(UUID.randomUUID())
@@ -82,12 +82,12 @@ public class CustomerServiceImpl implements CustomerService {
         return savedCustomer;
     }
 
-    public List<Customer> getAllCostumers() {
+    public List<Customer> getAllCustomers() {
         return new ArrayList<>(customerMap.values());
     }
 
     @Override
-    public Customer getCostumerById(UUID id) {
+    public Customer getCustomerById(UUID id) {
 
         return customerMap.get(id);
     }
