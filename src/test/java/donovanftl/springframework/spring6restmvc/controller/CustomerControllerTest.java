@@ -1,7 +1,7 @@
 package donovanftl.springframework.spring6restmvc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import donovanftl.springframework.spring6restmvc.entities.CustomerDTO;
+import donovanftl.springframework.spring6restmvc.model.CustomerDTO;
 import donovanftl.springframework.spring6restmvc.services.CustomerService;
 import donovanftl.springframework.spring6restmvc.services.CustomerServiceImpl;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package donovanftl.springframework.spring6restmvc.entities;
+package donovanftl.springframework.spring6restmvc.model;
 
 import lombok.Builder;
 import lombok.Data;

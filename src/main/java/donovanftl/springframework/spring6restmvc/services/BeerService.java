@@ -1,6 +1,6 @@
 package donovanftl.springframework.spring6restmvc.services;
 
-import donovanftl.springframework.spring6restmvc.entities.BeerDTO;
+import donovanftl.springframework.spring6restmvc.model.BeerDTO;
 
 import java.util.List;
 import java.util.Optional;

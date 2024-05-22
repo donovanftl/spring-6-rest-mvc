@@ -1,7 +1,7 @@
 package donovanftl.springframework.spring6restmvc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import donovanftl.springframework.spring6restmvc.entities.BeerDTO;
+import donovanftl.springframework.spring6restmvc.model.BeerDTO;
 import donovanftl.springframework.spring6restmvc.services.BeerService;
 import donovanftl.springframework.spring6restmvc.services.BeerServiceImpl;
 import org.junit.jupiter.api.BeforeEach;

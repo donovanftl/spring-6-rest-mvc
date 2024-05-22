@@ -1,6 +1,6 @@
 package donovanftl.springframework.spring6restmvc.controller;
 
-import donovanftl.springframework.spring6restmvc.entities.CustomerDTO;
+import donovanftl.springframework.spring6restmvc.model.CustomerDTO;
 import donovanftl.springframework.spring6restmvc.services.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;

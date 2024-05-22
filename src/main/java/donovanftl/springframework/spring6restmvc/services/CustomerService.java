@@ -1,7 +1,7 @@
 package donovanftl.springframework.spring6restmvc.services;
 
 
-import donovanftl.springframework.spring6restmvc.entities.CustomerDTO;
+import donovanftl.springframework.spring6restmvc.model.CustomerDTO;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,7 +1,7 @@
 package donovanftl.springframework.spring6restmvc.services;
 
-import donovanftl.springframework.spring6restmvc.entities.BeerDTO;
-import donovanftl.springframework.spring6restmvc.entities.BeerStyle;
+import donovanftl.springframework.spring6restmvc.model.BeerDTO;
+import donovanftl.springframework.spring6restmvc.model.BeerStyle;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

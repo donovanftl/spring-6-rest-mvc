@@ -1,6 +1,6 @@
 package donovanftl.springframework.spring6restmvc.services;
 
-import donovanftl.springframework.spring6restmvc.entities.CustomerDTO;
+import donovanftl.springframework.spring6restmvc.model.CustomerDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

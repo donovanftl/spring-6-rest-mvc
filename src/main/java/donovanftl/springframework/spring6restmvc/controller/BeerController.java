@@ -1,6 +1,6 @@
 package donovanftl.springframework.spring6restmvc.controller;
 
-import donovanftl.springframework.spring6restmvc.entities.BeerDTO;
+import donovanftl.springframework.spring6restmvc.model.BeerDTO;
 import donovanftl.springframework.spring6restmvc.services.BeerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
