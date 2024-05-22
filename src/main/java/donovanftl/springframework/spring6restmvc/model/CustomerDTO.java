@@ -6,14 +6,12 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Builder
 @Data
+@Builder
 public class CustomerDTO {
-
     private UUID id;
     private String name;
     private Integer version;
     private LocalDateTime createdDate;
     private LocalDateTime updateDate;
-
 }
