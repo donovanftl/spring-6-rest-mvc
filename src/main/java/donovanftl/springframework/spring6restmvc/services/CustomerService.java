@@ -1,7 +1,7 @@
 package donovanftl.springframework.spring6restmvc.services;
 
 
-import donovanftl.springframework.spring6restmvc.entities.Customer;
+import donovanftl.springframework.spring6restmvc.entities.CustomerDTO;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,15 +9,15 @@ import java.util.UUID;
 
 public interface CustomerService {
 
-    List<Customer> getAllCustomers();
+    List<CustomerDTO> getAllCustomers();
 
-    Optional<Customer> getCustomerById(UUID id);
+    Optional<CustomerDTO> getCustomerById(UUID id);
 
-    Customer saveNewCustomer(Customer customer);
+    CustomerDTO saveNewCustomer(CustomerDTO customer);
 
-    void updateCustomerById(UUID customerId, Customer customer);
+    void updateCustomerById(UUID customerId, CustomerDTO customer);
 
     void deleteCustomerById(UUID idCustomer);
 
-    void patchCustomerById(UUID customerId, Customer customer);
+    void patchCustomerById(UUID customerId, CustomerDTO customer);
 }
